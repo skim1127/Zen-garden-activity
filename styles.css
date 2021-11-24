@@ -1,0 +1,102 @@
+body {
+    background-color: #696969;
+    color: white;
+    font-family: 'Boebloe', sans-serif;
+}
+
+nav {
+    background-color: rgb(1, 1, 1, 0.5);
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+    border-color: white;
+    border-style: groove;
+}
+
+aside {
+    background-color: #550a8a;
+    border-radius: 5px;
+    border-style: groove;
+    border-color: lightblue;
+}
+
+nav, aside {
+    color: lightgray
+}
+
+a {
+    color: #b19cd9;
+    font-size: 1.2em;
+}
+
+a:visited {
+    color: lightgoldenrodyellow
+}
+
+a:hover {
+    color: white
+}
+
+section {
+    border-width: 5px;
+    border-style: ridge;
+    border-radius: 5px;
+    border-color: #b19cd9;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+span {
+    font-weight: bolder;
+}
+
+main {
+    background-color: lightslategray;
+    width: 70%;
+    margin: auto;
+}
+
+ul li {
+    list-style: none;
+}
+
+nav h3 {
+    font-size: 2em;
+    color: lightpink;
+    text-shadow: 4px 4px 4px gray;
+}
+
+aside h3 {
+    font-size: 2em;
+    text-align: center;
+    color: lightblue;
+}
+
+#introduction {
+    text-shadow: 3px 3px 3px black;
+    color: lightgreen;
+    margin-left: 10px;
+}
+
+#cool-features {
+    text-shadow: 3px 3px 3px black;
+    color: lightsalmon;
+    margin-left: 10px;
+}
+
+#summary {
+    text-shadow: 3px 3px 3px black;
+    color: lightseagreen;
+    margin-left: 10px;
+}
