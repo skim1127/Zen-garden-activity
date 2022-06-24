@@ -1,0 +1,113 @@
+$main-background: #696969;
+$main-font: 'Boebloe', sans-serif;
+$dark-purple: #550a8a;
+$light-purple: #b19cd9;
+
+@mixin sectionFont {
+    font-family: 'arial';
+    font-size: 15px;
+    font-weight: bold;
+}
+
+@mixin addFontShadow {
+    text-shadow: 3px 3px 3px black;
+}
+
+// GENERAL STYLING
+body {
+    background-color: $main-background;
+    color: white;
+    font-family: $main-font;
+}
+// main header
+h1 {
+    @include addFontShadow();
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 3em;
+}
+
+p {
+    @include sectionFont()
+}
+
+ul li {
+    list-style: none;
+}
+
+// NAVBAR
+nav {
+    background-color: lightblue;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+    border-color: white;
+    border-style: groove;
+}
+
+#navbar-header {
+    font-size: 2em;
+    color: rgb(10, 10, 119);
+    text-shadow: 3px 3px 3px white;
+}
+// MAIN 
+main {
+    background-color: lightslategray;
+    width: 70%;
+    margin: auto;
+}
+
+section {
+    border-width: 5px;
+    border-style: ridge;
+    border-radius: 5px;
+    border-color: $light-purple;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+@mixin setTitleStyle($color) {
+    @include addFontShadow();
+    margin-left: 10px;
+    color: $color
+}
+
+#introduction {
+    @include setTitleStyle(lightgreen)
+}
+
+#cool-features {
+    @include setTitleStyle(lightsalmon)
+}
+
+#summary {
+    @include setTitleStyle(lightseagreen)
+}
+
+// ASIDE
+aside {
+    background-color: $dark-purple;
+    border-radius: 5px;
+    border-style: groove;
+    border-color: lightblue;
+}
+
+aside h3 {
+    @include addFontShadow();
+    font-size: 2em;
+    text-align: center;
+    color: lightblue;
+}
+
+a {
+    color: $light-purple;
+    font-size: 1.2em;
+
+    &:visited{
+        color: lightgoldenrodyellow
+    }
+    &:hover{
+        color: white
+    }
+}

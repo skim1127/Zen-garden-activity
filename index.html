@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>HackerU Gardent</title>
-    <link href="./styles.css" rel="stylesheet" type="text/css" />
+    <title>HackerU Garden</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
     <link href="http://fonts.cdnfonts.com/css/boebloe" rel="stylesheet">
   </head>
   <body>
@@ -12,7 +12,8 @@
       <h1>HackerU Garden</h1>
     </header>
     <nav>
-      <h3>Under Construction</h3>
+      <h3 id="navbar-header">Under Construction</h3>
+      <div id="like_button_container"></div>
       <ul>
         <li><a href="#">Home<a></li>
         <li><a href="#">About Me</a></li>
@@ -46,9 +47,9 @@
     <aside>
       <h3>About Me</h3>
         <ul>
-          <li><span>Hometown: Harrington Park</span></li>
-          <li><span>Fav Color: Green</span></li>
-          <li><span>Fav Season: Spring</span></li>
+          <p>Hometown: Harrington Park</p>
+          <p>Fav Color: Green</p>
+          <p>Fav Season: Spring</p>
         </ul>
     </aside>
     <footer>
@@ -58,5 +59,11 @@
         <li><a href="https://www.w3schools.com/w3css/">W3 Schools</a></li>
       </ul>
     </footer>
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <!-- Load our React component. -->
+    <script src="like_button.js"></script>
   </body>
 </html>

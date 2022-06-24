@@ -21,10 +21,6 @@ aside {
     border-color: lightblue;
 }
 
-nav, aside {
-    color: lightgray
-}
-
 a {
     color: #b19cd9;
     font-size: 1.2em;
